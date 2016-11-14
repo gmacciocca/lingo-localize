@@ -1,5 +1,5 @@
 export default class Localize {
-    constructor(roles, locResource) {
+    constructor(locResource) {
         this._locResource = locResource;
     }
 

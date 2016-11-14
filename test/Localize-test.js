@@ -2,8 +2,6 @@ import Localize from "../src/Localize";
 
 describe("Localize", function() {
     beforeEach(() => {
-        this.roles = {
-        };
         this.locResource = {
             firstLevelString: "I am zero level string!",
             secondLevel: {
@@ -15,7 +13,7 @@ describe("Localize", function() {
                 }
             },
         };
-        this.localize = new Localize(this.roles, this.locResource);
+        this.localize = new Localize(this.locResource);
     });
 
     it("implements interface", () => {
@@ -86,7 +84,7 @@ describe("Localize", function() {
 
     describe("Localizing a tring with no valid loc resource", () => {
         beforeEach(() => {
-            this.localize = new Localize(this.roles, null);
+            this.localize = new Localize(null);
             this.locResult = this.localize.localize("what/ever");
         });
         it("returns the key", () => {
