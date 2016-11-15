@@ -13,7 +13,10 @@ describe("Localize", function() {
                 }
             },
         };
-        this.localize = new Localize(this.locResource);
+        this.dependencies = {
+            "localize.resource": this.locResource
+        };
+        this.localize = new Localize(this.dependencies);
     });
 
     it("implements interface", () => {
@@ -82,7 +85,7 @@ describe("Localize", function() {
         });
     });
 
-    describe("Localizing a tring with no valid loc resource", () => {
+    describe("Localizing a string with no valid loc resource", () => {
         beforeEach(() => {
             this.localize = new Localize(null);
             this.locResult = this.localize.localize("what/ever");

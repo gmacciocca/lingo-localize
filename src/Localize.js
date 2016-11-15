@@ -1,6 +1,6 @@
 export default class Localize {
-    constructor(locResource) {
-        this._locResource = locResource;
+    constructor(dependencies) {
+        this._locResource = (dependencies || {})["localize.resource"];
     }
 
     localize(key) {
