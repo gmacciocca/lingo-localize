@@ -1,6 +1,6 @@
 {
   "version": "0.1.0",
-  "name": "@gmacciocca/localize",
+  "name": "lingo-localize",
   "description": "Localize Kit.",
   "keywords": [
     "localize"
@@ -38,13 +38,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/gmacciocca/localize.git"
+    "url": "git://github.com/gmacciocca/lingo-localize.git"
   },
   "bugs": {
-    "url": "https://github.com/gmacciocca/localize/issues"
+    "url": "https://github.com/gmacciocca/lingo-localize/issues"
   },
-  "homepage": "https://github.com/gmacciocca/localize",
+  "homepage": "https://github.com/gmacciocca/lingo-localize",
   "readmeFilename": "README.md",
-  "gitHead": "b4ee5d2c2bdd159efdef4fb3d854a9e8722a3ae1",
   "readme": "#hello!\n"
 }
